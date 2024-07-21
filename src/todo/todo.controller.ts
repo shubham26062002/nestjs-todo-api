@@ -2,8 +2,8 @@ import { Controller, Get, Post, Body, Patch, Param, Delete, UseGuards, Req, Http
 import { TodoService } from './todo.service';
 import { CreateTodoDto } from './dto/create-todo.dto';
 import { UpdateTodoDto } from './dto/update-todo.dto';
-import { JwtGuard } from 'src/auth/guards/jwt.guard';
-import { GetUser } from 'src/auth/decorators/get-user.decorator';
+import { JwtGuard } from '../auth/guards/jwt.guard';
+import { GetUser } from '../auth/decorators/get-user.decorator';
 import { ApiTags } from '@nestjs/swagger';
 import { ApiOperation } from '@nestjs/swagger';
 
